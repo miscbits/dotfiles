@@ -1,0 +1,25 @@
+theme = "jellybeans"
+
+[editor]
+line-number = "relative"
+mouse = false
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff", "spacer"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[keys.normal]
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+
+[keys.normal.space]
+o = ":write"
