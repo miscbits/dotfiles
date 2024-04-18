@@ -1,1 +1,5 @@
 iterm2
+zed/.tmp
+zed/embeddings
+zed/conversations
+*.db
