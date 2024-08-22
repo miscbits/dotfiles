@@ -2,4 +2,6 @@ iterm2
 zed/.tmp
 zed/embeddings
 zed/conversations
+fish
+uv
 *.db
