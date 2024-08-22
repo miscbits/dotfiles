@@ -1,5 +1,4 @@
 [language-server]
-pyright = { command = "pyright-langserver", args = ["--stdio"], config = {} }
 terraform-ls = { command = "terraform-ls", args = ["serve"] }
 vuels = { command = "vue-language-server", args = ["--stdio"], config = { typescript = { tsdk = "node_modules/typescript/lib/" } } }
 yaml-language-server = { command = "yaml-language-server", args = ["--stdio"] }
@@ -126,6 +125,20 @@ indent = { tab-width = 2, unit = "  " }
 name = "html"
 source = { git = "https://github.com/tree-sitter/tree-sitter-html", rev = "29f53d8f4f2335e61bf6418ab8958dac3282077a" }
 
+[language-server.ruff]
+command = "ruff"
+args = ['server']
+
+[language-server.pylsp]
+command = "pylsp"
+
+[language-server.jedi]
+command = "jedi-language-server"
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
 [[language]]
 name = "python"
 scope = "source.python"
@@ -134,9 +147,8 @@ file-types = ["py", "pyi", "py3", "pyw", "ptl", "rpy", "cpy", "ipy", "pyt", { gl
 shebangs = ["python"]
 roots = ["pyproject.toml", "setup.py", "poetry.lock", "pyrightconfig.json"]
 comment-token = "#"
-language-servers = [ "pyright" ]
-# TODO: pyls needs utf-8 offsets
-indent = { tab-width = 4, unit = "    " }
+language-servers = [ "ruff", "pylsp", "pyright" ]
+auto-format = true
 
 [[grammar]]
 name = "python"
