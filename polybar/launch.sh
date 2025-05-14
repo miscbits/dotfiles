@@ -1,0 +1,9 @@
+(polybar power)&
+(polybar clock)&
+(polybar spotify)&
+(polybar workspaces)&
+(polybar secondworkspaces)&
+(polybar sound)&
+(polybar settings)&
+(polybar cava)&
+(polybar metrics)&
