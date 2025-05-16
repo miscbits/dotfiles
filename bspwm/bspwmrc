@@ -21,8 +21,8 @@ bspc rule -a Screenkey manage=off
 
 # load fonts
 fc-cache -f -v
-sh .config/polybar/launch.sh
+sh ~/.config/polybar/launch.sh
 feh --bg-scale ~/Pictures/Art/stolas\ in\ a\ tree.png ~/Pictures/Art/miscbits_band_w_bg.PNG
 
-compton --vsync opengl-swc --backend glx
+compton --vsync opengl-swc --backend glx &
 ~/.cargo/bin/goxlr/goxlr-daemon &

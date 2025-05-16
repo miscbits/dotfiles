@@ -7,3 +7,4 @@
 (polybar settings)&
 (polybar cava)&
 (polybar metrics)&
+(polybar launcher)&
